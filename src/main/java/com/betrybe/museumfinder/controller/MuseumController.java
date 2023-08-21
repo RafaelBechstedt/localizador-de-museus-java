@@ -30,6 +30,9 @@ public class MuseumController {
     this.museumService = museumServiceInterface;
   }
 
+  /**
+   * Cria rota post.
+   */
   @PostMapping
   @ResponseStatus(HttpStatus.CREATED)
   public MuseumDto createMuseum(@RequestBody MuseumCreationDto newMuseum) {

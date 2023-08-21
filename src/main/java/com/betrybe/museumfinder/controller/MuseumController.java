@@ -13,12 +13,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Define a camada Controller.
+ */
 @RestController
 @RequestMapping("/museums")
 public class MuseumController {
 
   private final MuseumServiceInterface museumService;
 
+  /**
+   * Define construtor.
+   */
   @Autowired
   public MuseumController(MuseumServiceInterface museumServiceInterface) {
     this.museumService = museumServiceInterface;
